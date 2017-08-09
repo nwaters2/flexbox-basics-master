@@ -1,0 +1,54 @@
+
+/*
+  STYLESHEET:
+	selector { property:value }
+
+*/
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+ justify-content: space-around;
+}
+
+.flex-item {
+  background: #f25a32;
+  padding: 5px;
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .flex-item {
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-item {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .flex-item {
+    width: 200px;
+  }
+}
+/*
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+*/
